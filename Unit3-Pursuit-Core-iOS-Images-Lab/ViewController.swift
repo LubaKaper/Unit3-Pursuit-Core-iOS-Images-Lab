@@ -9,10 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var comivImageView: UIImageView!
+    
+    @IBOutlet weak var comicStepper: UIStepper!
+    
+    
+    @IBOutlet weak var textField: UITextField!
+    
+    var comicInfo: Comic!
+        
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 
