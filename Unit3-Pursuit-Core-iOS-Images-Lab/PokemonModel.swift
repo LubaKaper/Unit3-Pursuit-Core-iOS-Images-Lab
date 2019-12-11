@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+struct PokemonInfo: Decodable {
+    let card: [Card]
+}
+struct Card: Decodable {
+    let name: String
+    let imageUrl: String
+    let imageUrlHiRes: String
+    let types: [String]
+    let weaknesses: [Weakness]?
+    let set: String
+}
+
+struct Weakness: Decodable {
+    let type: String
+    let value: String
+}
