@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Utx-b5-vAf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Agz-IC-fbv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -23,17 +23,90 @@
             </objects>
             <point key="canvasLocation" x="1418.840579710145" y="934.82142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--PokemonCards-->
         <scene sceneID="ZAV-lt-e0h">
             <objects>
-                <viewController id="GVy-Ds-5Jm" sceneMemberID="viewController">
+                <viewController id="GVy-Ds-5Jm" customClass="PokemonViewController" customModule="Unit3_Pursuit_Core_iOS_Images_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2mh-Sc-PTe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lox-6J-Wpz">
+                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="pokemonCell" rowHeight="145" id="dGB-76-mc8">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="145"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dGB-76-mc8" id="OuA-AS-S6F">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mf2-WM-FEx">
+                                                    <rect key="frame" x="225" y="0.0" width="189" height="145"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Za-rN-bzZ">
+                                                    <rect key="frame" x="20" y="11" width="185" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5d-Al-X9D">
+                                                    <rect key="frame" x="20" y="75" width="185" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6I-FU-Dms">
+                                                    <rect key="frame" x="20" y="113" width="185" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbo-ei-Knk">
+                                                    <rect key="frame" x="20" y="40" width="185" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mf2-WM-FEx" firstAttribute="leading" secondItem="1Za-rN-bzZ" secondAttribute="trailing" constant="20" id="0By-im-L1D"/>
+                                                <constraint firstItem="1Za-rN-bzZ" firstAttribute="top" secondItem="OuA-AS-S6F" secondAttribute="topMargin" id="B93-RN-ZH0"/>
+                                                <constraint firstItem="mf2-WM-FEx" firstAttribute="width" secondItem="OuA-AS-S6F" secondAttribute="width" multiplier="0.456522" id="PVC-eP-3I0"/>
+                                                <constraint firstItem="mf2-WM-FEx" firstAttribute="top" secondItem="OuA-AS-S6F" secondAttribute="top" id="a7W-3d-vHf"/>
+                                                <constraint firstItem="1Za-rN-bzZ" firstAttribute="leading" secondItem="OuA-AS-S6F" secondAttribute="leadingMargin" id="jdH-gB-wm9"/>
+                                                <constraint firstAttribute="trailing" secondItem="mf2-WM-FEx" secondAttribute="trailing" id="r3z-nX-f51"/>
+                                                <constraint firstAttribute="bottom" secondItem="mf2-WM-FEx" secondAttribute="bottom" id="sKO-Jd-SaL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="IQN-Lr-cc6">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IQN-Lr-cc6" firstAttribute="trailing" secondItem="MmI-Qu-ttU" secondAttribute="trailing" id="CQB-dL-DQo"/>
+                            <constraint firstItem="IQN-Lr-cc6" firstAttribute="leading" secondItem="MmI-Qu-ttU" secondAttribute="leading" id="JW2-Uu-ai0"/>
+                            <constraint firstItem="Lox-6J-Wpz" firstAttribute="leading" secondItem="MmI-Qu-ttU" secondAttribute="leading" id="ddA-Nz-27e"/>
+                            <constraint firstAttribute="bottom" secondItem="Lox-6J-Wpz" secondAttribute="bottom" id="g4b-wK-awD"/>
+                            <constraint firstItem="Lox-6J-Wpz" firstAttribute="trailing" secondItem="MmI-Qu-ttU" secondAttribute="trailing" id="ga3-IB-imH"/>
+                            <constraint firstItem="IQN-Lr-cc6" firstAttribute="top" secondItem="MmI-Qu-ttU" secondAttribute="top" id="k1c-q2-G5z"/>
+                            <constraint firstItem="Lox-6J-Wpz" firstAttribute="top" secondItem="IQN-Lr-cc6" secondAttribute="bottom" id="odS-mg-kLj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MmI-Qu-ttU"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lBB-qx-EO4"/>
+                    <navigationItem key="navigationItem" title="PokemonCards" id="lBB-qx-EO4"/>
+                    <connections>
+                        <outlet property="tableView" destination="Lox-6J-Wpz" id="D5m-bZ-g69"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cc-fu-ADp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,18 +123,27 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JxZ-FO-y8R">
                                 <rect key="frame" x="0.0" y="89" width="414" height="290.5"/>
                             </imageView>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="kGi-4h-qdV">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="2500" translatesAutoresizingMaskIntoConstraints="NO" id="kGi-4h-qdV">
                                 <rect key="frame" x="160" y="396" width="94" height="32"/>
+                                <connections>
+                                    <action selector="changeComicStepper:" destination="Z4c-a2-YyU" eventType="valueChanged" id="zq0-tT-XEU"/>
+                                </connections>
                             </stepper>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYi-6v-7vz">
                                 <rect key="frame" x="9" y="756" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="most recent"/>
+                                <connections>
+                                    <action selector="recentButtonPressed:" destination="Z4c-a2-YyU" eventType="touchUpInside" id="Jsp-9D-HBg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svg-3b-EfH">
                                 <rect key="frame" x="328" y="756" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="random"/>
+                                <connections>
+                                    <action selector="randomButtonPressed:" destination="Z4c-a2-YyU" eventType="touchUpInside" id="HOM-3s-nMN"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uzw-Sa-XAb">
                                 <rect key="frame" x="20" y="523" width="374" height="34"/>

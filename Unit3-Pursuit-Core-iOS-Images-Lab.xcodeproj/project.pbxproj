@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D5C22F323A0504D00B5A8E4 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5C22F223A0504D00B5A8E4 /* PokemonViewController.swift */; };
+		8D5C22F523A0525400B5A8E4 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5C22F423A0525400B5A8E4 /* PokemonModel.swift */; };
 		8DD9965D239EF9BA00E85A2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD9965C239EF9BA00E85A2D /* AppDelegate.swift */; };
 		8DD9965F239EF9BA00E85A2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD9965E239EF9BA00E85A2D /* SceneDelegate.swift */; };
 		8DD99661239EF9BA00E85A2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD99660239EF9BA00E85A2D /* ViewController.swift */; };
@@ -18,6 +20,7 @@
 		8DD99682239F39E000E85A2D /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD99681239F39E000E85A2D /* AppError.swift */; };
 		8DD99684239F3A5800E85A2D /* ComicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD99683239F3A5800E85A2D /* ComicModel.swift */; };
 		8DD99686239F3DB600E85A2D /* ComicAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD99685239F3DB600E85A2D /* ComicAPIClient.swift */; };
+		8DD9969523A0309F00E85A2D /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD9969423A0309E00E85A2D /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D5C22F223A0504D00B5A8E4 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
+		8D5C22F423A0525400B5A8E4 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
 		8DD99659239EF9BA00E85A2D /* Unit3-Pursuit-Core-iOS-Images-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit3-Pursuit-Core-iOS-Images-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD9965C239EF9BA00E85A2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DD9965E239EF9BA00E85A2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +51,7 @@
 		8DD99681239F39E000E85A2D /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		8DD99683239F3A5800E85A2D /* ComicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicModel.swift; sourceTree = "<group>"; };
 		8DD99685239F3DB600E85A2D /* ComicAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicAPIClient.swift; sourceTree = "<group>"; };
+		8DD9969423A0309E00E85A2D /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,8 @@
 				8DD99665239EF9BC00E85A2D /* Assets.xcassets */,
 				8DD99667239EF9BC00E85A2D /* LaunchScreen.storyboard */,
 				8DD9966A239EF9BC00E85A2D /* Info.plist */,
+				8D5C22F223A0504D00B5A8E4 /* PokemonViewController.swift */,
+				8D5C22F423A0525400B5A8E4 /* PokemonModel.swift */,
 			);
 			path = "Unit3-Pursuit-Core-iOS-Images-Lab";
 			sourceTree = "<group>";
@@ -115,6 +123,7 @@
 				8DD99681239F39E000E85A2D /* AppError.swift */,
 				8DD99683239F3A5800E85A2D /* ComicModel.swift */,
 				8DD99685239F3DB600E85A2D /* ComicAPIClient.swift */,
+				8DD9969423A0309E00E85A2D /* UIImageView+Extension.swift */,
 			);
 			path = "Helper Files";
 			sourceTree = "<group>";
@@ -222,6 +231,9 @@
 			files = (
 				8DD99680239F38B900E85A2D /* NetworkHelper.swift in Sources */,
 				8DD99686239F3DB600E85A2D /* ComicAPIClient.swift in Sources */,
+				8D5C22F323A0504D00B5A8E4 /* PokemonViewController.swift in Sources */,
+				8D5C22F523A0525400B5A8E4 /* PokemonModel.swift in Sources */,
+				8DD9969523A0309F00E85A2D /* UIImageView+Extension.swift in Sources */,
 				8DD99661239EF9BA00E85A2D /* ViewController.swift in Sources */,
 				8DD99682239F39E000E85A2D /* AppError.swift in Sources */,
 				8DD9965D239EF9BA00E85A2D /* AppDelegate.swift in Sources */,

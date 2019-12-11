@@ -11,5 +11,8 @@ import Foundation
 struct Comic: Decodable {
     var num: Int
     var img: String
-    var title: String 
+    var title: String
+    var month: String
+    let year: String
+    let day: String
 }
