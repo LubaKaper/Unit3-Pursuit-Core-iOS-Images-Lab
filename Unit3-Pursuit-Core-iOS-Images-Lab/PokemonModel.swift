@@ -9,13 +9,13 @@
 import Foundation
 
 struct PokemonInfo: Decodable {
-    let card: [Card]
+    let cards: [Card]
 }
 struct Card: Decodable {
-    let name: String
-    let imageUrl: String
+    let name: String?
+    let imageUrl: String?
     let imageUrlHiRes: String
-    let types: [String]
+    let types: [String]?
     let weaknesses: [Weakness]?
     let set: String
 }
