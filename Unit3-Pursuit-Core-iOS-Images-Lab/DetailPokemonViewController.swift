@@ -41,10 +41,11 @@ class DetailPokemonViewController: UIViewController {
 //        guard let weak = weakness else {
 //            fatalError("")
 //        }
-        
+        view.backgroundColor = .yellow
         nameLabel.text = pokemon.name
         typesLabel.text = pokemon.types?.first
-       // weaknessesLabel.text = weak.type
+       
+        weaknessesLabel.text = "\(pokemon.weaknesses?[0].type ?? "") and \(pokemon.weaknesses?[0].value ?? "")"
         setLabel.text = pokemon.set
         imageView.getImage(with: pokemon.imageUrlHiRes ) { [weak self] (result) in
             switch result {

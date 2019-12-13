@@ -100,6 +100,7 @@ extension PokemonViewController: UITableViewDataSource {
         }
         let pokemon = pokemons[indexPath.row]
         cell.configureCell(for: pokemon)
+        cell.backgroundColor = .black
         return cell
     }
 }
