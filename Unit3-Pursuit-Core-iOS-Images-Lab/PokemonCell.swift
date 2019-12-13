@@ -34,9 +34,3 @@ class PokemonCell: UITableViewCell {
     
 }
 
-//NetworkHelper.shared.performDataTask(with: pokemon.imageUrl ?? "") { [weak self] (result) in
-//           switch result {
-//           case .failure
-//
-//           }
-//       }

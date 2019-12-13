@@ -23,13 +23,7 @@ class PokemonViewController: UIViewController {
         }
     }
     
-//    var weakness = [Weakness]() {
-//        didSet {
-//            DispatchQueue.main.async {
-//                self.tableView.reloadData()
-//            }
-//        }
-//    }
+ 
     
     var searchQuary = ""
     
@@ -40,7 +34,7 @@ class PokemonViewController: UIViewController {
         tableView.dataSource = self
         searchBar.delegate = self
         loadData()
-       //searchPokemons(searchQ: searchQuary)
+       
     }
     
     func loadData() {
@@ -53,7 +47,7 @@ class PokemonViewController: UIViewController {
                     DispatchQueue.main.async {
                         
                         self?.pokemons = pokemons.cards
-                        //dump(pokemons)
+                        
                 }
                 }
             })
@@ -62,15 +56,7 @@ class PokemonViewController: UIViewController {
         func searchPokemons(searchQ: String) {
             
             pokemons = pokemons.filter { $0.name?.first?.lowercased().contains(searchQ.lowercased()) ?? false}
-//            PokemonAPIClient.getPokemon( completion:  { [weak self] (result) in
-//                switch result {
-//                case .failure(let appError):
-//                    print("error: \(appError)")
-//                    // TODO: alert controller
-//                case .success(let pokemons):
-//                    self?.pokemons = pokemons.cards.filter {($0.name?.lowercased().contains(self?.searchQuary.lowercased()) ?? false)}
-//                }
-//            })
+
         }
     
     
@@ -80,8 +66,7 @@ class PokemonViewController: UIViewController {
         }
         let allPokemonInfo = pokemons[indexPath.row]
         detailPokemonVC.pokemonInfo = allPokemonInfo
-       // let wealnessInfo = weakness[indexPath.row]
-       // detailPokemonVC.weakness = wealnessInfo
+       
         
     }
     }

@@ -240,11 +240,11 @@
             </objects>
             <point key="canvasLocation" x="-1087" y="500"/>
         </scene>
-        <!--Item 1-->
+        <!--Comic-->
         <scene sceneID="4yP-cz-bz0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Utx-b5-vAf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="UuN-qt-JNY"/>
+                    <tabBarItem key="tabBarItem" title="Comic" id="UuN-qt-JNY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QAX-gP-Dmx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -278,11 +278,11 @@
             </objects>
             <point key="canvasLocation" x="508.69565217391306" y="934.82142857142856"/>
         </scene>
-        <!--Item 2-->
+        <!--Pokemon Cards-->
         <scene sceneID="fZG-Us-zz1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Prj-FK-wv2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="wiM-OI-wQK"/>
+                    <tabBarItem key="tabBarItem" title="Pokemon Cards" id="wiM-OI-wQK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u3N-IF-vAN">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
